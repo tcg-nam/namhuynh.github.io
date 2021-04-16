@@ -16686,12 +16686,18 @@ body {
 
 .darkmode-checkbox {
   position: absolute;
-  top: 50px;
-  right: 20px;
-  z-index: 1;
+  /* top: 50px; */
+  /* right: 20px; */
+  /* z-index: 1; */
   transform: scale(2);
   opacity: 0;
   cursor: pointer;
+
+  width: 20px;
+  height: 10px;
+  top: 23px;
+  right: 50%;
+  z-index: 10000;
 }
 
 .darkmode-toggle__slider {
@@ -16699,11 +16705,15 @@ body {
   height: 100%;
   position: absolute;
   cursor: pointer;
-  top: 50px;
-  right: 10px;
+  /* top: 50px; */
+  /* right: 10px; */
   background-color: #ccc;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+
+  top: 20px;
+  z-index: 2000;
+  right: 50%;
 }
 
 .darkmode-toggle__slider:before {
