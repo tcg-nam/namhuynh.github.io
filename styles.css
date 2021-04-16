@@ -16647,7 +16647,7 @@ button:focus {
 }
 
 /* dark theme swtich */
-/* body {
+body {
   margin: 0;
 }
 
@@ -16738,4 +16738,4 @@ button:focus {
 
 .darkmode-toggle__slider.round:before {
   border-radius: 50%;
-} */
+}
