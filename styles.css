@@ -1,6 +1,6 @@
 /* datatable_style.css */
 
-#table1 .dash-spreadsheet-container .dash-spreadsheet-inner table {
+/* #table1 .dash-spreadsheet-container .dash-spreadsheet-inner table {
   --accent: blue !important;
   --selected-background: rgba(0, 100, 200, 0.3) !important;
 }
@@ -12,7 +12,7 @@
   font-size: 12px;
   padding: 15px;
   font-family: Arial, Helvetica, sans-serif;
-}
+} */
 
 /* date_time.css */
 .DateInput_input {
@@ -16647,7 +16647,7 @@ button:focus {
 }
 
 /* dark theme swtich */
-body {
+/* body {
   margin: 0;
 }
 
@@ -16700,9 +16700,7 @@ body {
   position: absolute;
   cursor: pointer;
   top: 50px;
-  /*   left: 0; */
   right: 10px;
-  /*   bottom: 0; */
   background-color: #ccc;
   -webkit-transition: 0.4s;
   transition: 0.4s;
@@ -16734,11 +16732,10 @@ body {
   transform: translateX(13px);
 }
 
-/* Rounded sliders */
 .darkmode-toggle__slider.round {
   border-radius: 17px;
 }
 
 .darkmode-toggle__slider.round:before {
   border-radius: 50%;
-}
+} */
