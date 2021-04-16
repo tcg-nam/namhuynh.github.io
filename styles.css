@@ -16645,3 +16645,100 @@ button:focus {
 .color-product-RPO-IV-58 {
   border-color: #385b8f;
 }
+
+/* dark theme swtich */
+body {
+  margin: 0;
+}
+
+.app {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.app-container {
+  --color-background: white;
+  --color-text: #000;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 100px 20px;
+  width: 100%;
+  height: 100%;
+}
+
+.darkmode-checkbox:checked ~ .app-container {
+  --color-background: #121212;
+  --color-text: #e8e8e8;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  z-index: -1;
+}
+
+.darkmode-toggle {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 17px;
+}
+
+.darkmode-checkbox {
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  z-index: 1;
+  transform: scale(2);
+  opacity: 0;
+  cursor: pointer;
+}
+
+.darkmode-toggle__slider {
+  width: 30px;
+  height: 100%;
+  position: absolute;
+  cursor: pointer;
+  top: 50px;
+  /*   left: 0; */
+  right: 10px;
+  /*   bottom: 0; */
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.darkmode-toggle__slider:before {
+  position: absolute;
+  content: "";
+  height: 13px;
+  width: 13px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.darkmode-checkbox:checked + .darkmode-toggle .darkmode-toggle__slider {
+  background-color: #2196f3;
+}
+
+.darkmode-checkbox:focus + .darkmode-toggle .darkmode-toggle__slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+.darkmode-checkbox:checked + .darkmode-toggle .darkmode-toggle__slider:before {
+  -webkit-transform: translateX(13px);
+  -ms-transform: translateX(13px);
+  transform: translateX(13px);
+}
+
+/* Rounded sliders */
+.darkmode-toggle__slider.round {
+  border-radius: 17px;
+}
+
+.darkmode-toggle__slider.round:before {
+  border-radius: 50%;
+}
